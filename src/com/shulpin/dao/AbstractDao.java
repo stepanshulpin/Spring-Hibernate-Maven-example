@@ -3,10 +3,13 @@ package com.shulpin.dao;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 
 public abstract class AbstractDao {
 
     @Autowired
+    @Qualifier("sessionFactory")
     private SessionFactory sessionFactory;
 
     public void setSessionFactory(SessionFactory sessionFactory) {

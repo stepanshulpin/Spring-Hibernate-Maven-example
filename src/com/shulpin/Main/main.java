@@ -2,9 +2,9 @@ package com.shulpin.Main;
 
 import com.shulpin.model.Cargo;
 import com.shulpin.service.CargoService;
-import com.shulpin.configuration.AppConfig;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.sql.Date;
 import java.util.List;
@@ -13,7 +13,9 @@ public class main {
 
     public static void main(String[] args) {
 
-        AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+        context.scan("com.shulpin");
+        context.refresh();
 
         CargoService service = (CargoService)context.getBean("cargoService");
 
