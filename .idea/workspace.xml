@@ -6,23 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab1bae30-36af-49ac-be20-0ccea2e10f10" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/springmvc-dispatcher-servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shulpin/Main/main.class" afterPath="$PROJECT_DIR$/target/classes/com/shulpin/Main/main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shulpin/dao/AbstractDao.class" afterPath="$PROJECT_DIR$/target/classes/com/shulpin/dao/AbstractDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shulpin/dao/CargoDao.class" afterPath="$PROJECT_DIR$/target/classes/com/shulpin/dao/CargoDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shulpin/dao/CargoDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/shulpin/dao/CargoDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shulpin/model/Cargo.class" afterPath="$PROJECT_DIR$/target/classes/com/shulpin/model/Cargo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shulpin/service/CargoService.class" afterPath="$PROJECT_DIR$/target/classes/com/shulpin/service/CargoService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/shulpin/service/CargoServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/shulpin/service/CargoServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Spring_Hibernate_Mvn_Web_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Spring_Hibernate_Mvn_Web_exploded.xml" />
+    <list default="true" id="ab1bae30-36af-49ac-be20-0ccea2e10f10" name="Default" comment="add web">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring_Hibernate_Mvn.iml" afterPath="$PROJECT_DIR$/Spring_Hibernate_Mvn.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -71,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -169,12 +154,12 @@
         <option value="$PROJECT_DIR$/src/com/shulpin/Main/main.java" />
         <option value="$PROJECT_DIR$/src/com/shulpin/dao/CargoDaoImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/springmvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/com/shulpin/helloWorldController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/hello.jsp" />
         <option value="$PROJECT_DIR$/src/com/shulpin/HelloWorldController.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -502,7 +487,7 @@
       <workItem from="1512245676864" duration="85000" />
       <workItem from="1512287330773" duration="517000" />
       <workItem from="1512289136258" duration="203000" />
-      <workItem from="1512560417652" duration="4489000" />
+      <workItem from="1512560417652" duration="4597000" />
     </task>
     <task id="LOCAL-00001" summary="xml">
       <created>1512244142204</created>
@@ -518,15 +503,21 @@
       <option name="project" value="LOCAL" />
       <updated>1512563221719</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add web">
+      <created>1512564923065</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512564923065</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23042000" />
+    <option name="totallyTimeSpent" value="23150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -549,7 +540,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21614583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21614583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -571,7 +562,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="xml" />
     <MESSAGE value="works" />
-    <option name="LAST_COMMIT_MESSAGE" value="works" />
+    <MESSAGE value="add web" />
+    <option name="LAST_COMMIT_MESSAGE" value="add web" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -975,14 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -1019,6 +1003,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding />
         </state>
       </provider>
