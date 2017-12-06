@@ -1,5 +1,7 @@
 package com.shulpin.model;
 
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,6 +14,7 @@ import java.sql.Date;
 
 @Entity
 @Table(name="cargo")
+@EnableTransactionManagement
 public class Cargo implements Serializable {
 
     private static final long serialVersionUID = -5527566248002296042L;
