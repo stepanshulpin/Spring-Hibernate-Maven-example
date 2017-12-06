@@ -1,10 +1,8 @@
 package com.shulpin.Main;
 
-import com.shulpin.dao.CargoDao;
 import com.shulpin.model.Cargo;
 import com.shulpin.service.CargoService;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.sql.Date;
@@ -15,7 +13,7 @@ public class main {
     public static void main(String[] args) {
 
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("WEB-INF/spring-config.xml");
 
         CargoService service = (CargoService)context.getBean("cargoService");
 
