@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 public abstract class AbstractDao {
 
     @Autowired
-    @Qualifier("sessionFactory")
     private SessionFactory sessionFactory;
 
     public void setSessionFactory(SessionFactory sessionFactory) {

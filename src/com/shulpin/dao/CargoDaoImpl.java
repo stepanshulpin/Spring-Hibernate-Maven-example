@@ -27,21 +27,21 @@ public class CargoDaoImpl extends AbstractDao implements CargoDao {
         return (List<Cargo>) criteria.list();
     }
 
-    public void deleteCargoByName(String name) {
+    public void deleteCargoById(Long id) {
 
-        Query query = getSession().createSQLQuery("delete from Employee where product_name = :name");
-        query.setString("name", name);
+        Query query = getSession().createSQLQuery("delete from Cargo where id = :id");
+        query.setLong("id", id);
         query.executeUpdate();
 
     }
 
-    public Cargo findByName(String name) {
+    public Cargo findById(Long id) {
         Criteria criteria = getSession().createCriteria(Cargo.class);
-        criteria.add(Restrictions.eq("product_name",name));
+        criteria.add(Restrictions.eq("id",id));
         return (Cargo) criteria.uniqueResult();
     }
 
     public void updateCargo(Cargo cargo) {
-        persist(cargo);
+        getSession().update(cargo);
     }
 }

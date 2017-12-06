@@ -89,9 +89,8 @@ public class Cargo implements Serializable {
 
         Cargo cargo = (Cargo) o;
 
-        if (!id.equals(cargo.id)) return false;
-        if (productName != null ? !productName.equals(cargo.productName) : cargo.productName != null)
-            return false;
+        if (id != null ? !id.equals(cargo.id) : cargo.id != null) return false;
+        if (productName != null ? !productName.equals(cargo.productName) : cargo.productName != null) return false;
         if (weight != null ? !weight.equals(cargo.weight) : cargo.weight != null) return false;
         if (destinationCity != null ? !destinationCity.equals(cargo.destinationCity) : cargo.destinationCity != null)
             return false;
@@ -100,7 +99,7 @@ public class Cargo implements Serializable {
 
     @Override
     public int hashCode() {
-        int result = id.hashCode();
+        int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (productName != null ? productName.hashCode() : 0);
         result = 31 * result + (weight != null ? weight.hashCode() : 0);
         result = 31 * result + (destinationCity != null ? destinationCity.hashCode() : 0);

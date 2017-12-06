@@ -14,9 +14,9 @@ public interface CargoDao {
 
     List<Cargo> findAllCargo();
 
-    void deleteCargoByName(String name);
+    void deleteCargoById(Long id);
 
-    Cargo findByName(String name);
+    Cargo findById(Long id);
 
     void updateCargo(Cargo cargo);
 

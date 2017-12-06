@@ -16,7 +16,7 @@ public class CargoServiceImpl implements CargoService {
 
 
     @Autowired
-    private CargoDaoImpl dao;
+    private CargoDao dao;
 
     public void saveCargo(Cargo cargo) {
 
@@ -27,12 +27,12 @@ public class CargoServiceImpl implements CargoService {
         return dao.findAllCargo();
     }
 
-    public void deleteCargoByName(String name) {
-        dao.deleteCargoByName(name);
+    public void deleteCargoById(Long id) {
+        dao.deleteCargoById(id);
     }
 
-    public Cargo findByName(String name) {
-        return dao.findByName(name);
+    public Cargo findById(Long id) {
+        return dao.findById(id);
     }
 
     public void updateCargo(Cargo cargo) {
