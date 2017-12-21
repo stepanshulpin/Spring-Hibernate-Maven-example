@@ -1,4 +1,4 @@
-package com.shulpin;
+package com.shulpin.controller;
 
 import com.shulpin.model.Cargo;
 import com.shulpin.service.CargoService;
@@ -10,7 +10,9 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-@Controller
+import java.util.List;
+
+@RestController
 public class CargoController {
 
     @Autowired
@@ -26,5 +28,30 @@ public class CargoController {
         }
 
         return new ResponseEntity(cargo, HttpStatus.OK);
+    }
+
+    @GetMapping("/cargo")
+    @Transactional
+    public ResponseEntity<List<Cargo>> getAllCargo(){
+
+        return new ResponseEntity<List<Cargo>>(cargoService.findAllCargo(), HttpStatus.OK);
+
+    }
+
+    @PostMapping("/addCargo")
+    @Transactional
+    public ResponseEntity addCargo(@RequestBody Cargo cargo){
+        cargoService.saveCargo(cargo);
+        return new ResponseEntity(cargo, HttpStatus.CREATED);
+    }
+
+    @DeleteMapping("/cargo/{id}")
+    @Transactional
+    public ResponseEntity deleteCargo(@PathVariable("id") Long id){
+
+        cargoService.deleteCargoById(id);
+
+        return new ResponseEntity(HttpStatus.NO_CONTENT);
+
     }
 }
